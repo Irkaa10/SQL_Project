@@ -1,6 +1,6 @@
-Queries:
+--Queries:
 
-Question 1:
+--Question 1:
 
 SELECT
     id_product,
@@ -19,7 +19,7 @@ WHERE
     remaining_stock = 0 OR remaining_stock < 10;
 
 
-Question 2:
+--Question 2:
 
 SELECT
     p.title AS product_name,
@@ -34,7 +34,7 @@ GROUP BY
     p.title;
 
 
-Question 3:
+--Question 3:
 
 SELECT
     u.id_user,
@@ -54,7 +54,7 @@ ORDER BY
     u.id_user;
 
 
-Question 4:
+--Question 4:
 
 SELECT
     p.id_product,
@@ -68,7 +68,7 @@ LEFT JOIN
     AND CURRENT_DATE BETWEEN pr.start_date AND pr.end_date;
 
 
-Question 5:
+--Question 5:
 
 SELECT
     TRUNC(o.purchase_date) AS order_date,
@@ -86,7 +86,7 @@ ORDER BY
     order_date;
 
 
-Question 6:
+--Question 6:
 
 SELECT
     p.id_product,
@@ -102,7 +102,7 @@ GROUP BY
     p.id_product, p.title;
 
 
-Question 7:
+--Question 7:
 
 SELECT
     o.id_order,
